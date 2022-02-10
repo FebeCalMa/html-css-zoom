@@ -8,6 +8,7 @@
 body{
     font-family: sans-serif;
     color: white;
+
 }
 
 header{
@@ -35,27 +36,36 @@ i{
 
 /*MAIN*/
 main{
-    padding: 70px;
+    margin: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-img[alt="pinco-pallo-student"]{
+
+main div[class="pinco-pallo"]{
+    width: 200px;
+    min-height: 100px;
+    margin: 0px;
+    padding: 0px;
     border-radius: 3px;
-    
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 /*FOOTER*/
 footer{
-    width: 100%;
-    height: 100px;
-    padding: 20px;
     background-color: rgba(66, 65, 65, 0.8);
-    
+    min-height: 100px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
 }
 
-.func-flex{
-    display: flex;
-    
+footer > *{
+    width: calc(100% / 3);
 }
 
 ul li{
@@ -69,6 +79,20 @@ ul li{
     display: inline-block;
 }
 
+footer .func-flex-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .func-flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+footer .func-right{
+    display: flex;
+    justify-content: flex-end;
+}
 
 .func-right button{
     color: white;
