@@ -2,21 +2,25 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    
 }
 
 body{
     font-family: sans-serif;
     color: white;
+    background-color: black;
 
 }
 
 header{
-    padding: 4px;
+    flex-basis: 75px;
 }
 
-i{
-    background-color: rgba(66, 65, 65, 0.8);
+
+.full-page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
 /*HEADER*/
@@ -36,36 +40,42 @@ i{
 
 /*MAIN*/
 main{
-    margin: 100px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
+main div{
+    display: inline-block;
+}
 
 main div[class="pinco-pallo"]{
-    width: 200px;
-    min-height: 100px;
+    min-height: 300px;
     margin: 0px;
     padding: 0px;
-    border-radius: 3px;
-    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-image: url(https://picsum.photos/seed/picsum/200/100);
     background-repeat: no-repeat;
-    background-position: center;
+}
+
+span[class="pinco-pallo-user"]{
+    padding: 3px;
+    background-color: rgba(66, 65, 65, 0.8);
+    position: relative;
+    top: 80px;
+    left: 90px;
+
 }
 
 
 /*FOOTER*/
 footer{
     background-color: rgba(66, 65, 65, 0.8);
-    min-height: 100px;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
+    flex-basis: 100px;
+
 }
 
 footer > *{
-    width: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul li{
@@ -75,7 +85,6 @@ ul li{
     list-style: none;
     text-align: center;
     text-size-adjust: 0.5rem;
-    background-color: rgba(66, 65, 65, 0.8);
     display: inline-block;
 }
 
