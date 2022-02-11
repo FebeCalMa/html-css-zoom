@@ -40,10 +40,17 @@ header{
 
 /*MAIN*/
 main{
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0;
     flex-grow: 1;
 }
 
 main div{
+    width: 200px;
+    height: 100px;
+    margin-left: 2px;
+    margin-top: 0px;
     display: inline-block;
 }
 
@@ -68,7 +75,7 @@ span[class="pinco-pallo-user"]{
 /*FOOTER*/
 footer{
     background-color: rgba(66, 65, 65, 0.8);
-    flex-basis: 100px;
+    flex-basis: 50px;
 
 }
 
@@ -78,13 +85,11 @@ footer > *{
     align-items: center;
 }
 
-ul li{
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    list-style: none;
-    text-align: center;
-    text-size-adjust: 0.5rem;
+div[class="func-left-buttons"]{
+    display: inline-block;
+}
+
+div[class="func-center-buttons"]{
     display: inline-block;
 }
 
@@ -105,6 +110,7 @@ footer .func-right{
 
 .func-right button{
     color: white;
+    background: none;
     margin: 2px;
     border: none;
     border-radius: 3px;
